@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Harish.Dev | High-Performance Websites for Tamil Nadu Businesses</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700&amp;family=DM+Sans:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "inverse-surface": "#303030",
+                        "secondary-fixed": "#e4e2dc",
+                        "on-tertiary-fixed": "#1a1c1c",
+                        "on-tertiary-fixed-variant": "#454747",
+                        "surface-container-highest": "#e5e2e1",
+                        "on-primary-fixed-variant": "#00513e",
+                        "on-tertiary": "#ffffff",
+                        "surface-container-high": "#eae7e7",
+                        "on-secondary-fixed": "#1b1c18",
+                        "surface-dim": "#dcd9d9",
+                        "on-secondary-container": "#63635d",
+                        "tertiary": "#484a4a",
+                        "tertiary-fixed-dim": "#c6c6c7",
+                        "primary-fixed": "#a0f3d4",
+                        "on-tertiary-container": "#dcdddd",
+                        "surface-tint": "#086b53",
+                        "on-primary-fixed": "#002117",
+                        "inverse-on-surface": "#f3f0ef",
+                        "on-primary": "#ffffff",
+                        "inverse-primary": "#84d6b9",
+                        "surface": "#fcf9f8",
+                        "primary": "#005440",
+                        "secondary": "#5f5f59",
+                        "surface-variant": "#e5e2e1",
+                        "surface-bright": "#fcf9f8",
+                        "on-error": "#ffffff",
+                        "on-primary-container": "#9aedcf",
+                        "secondary-container": "#e1e0d9",
+                        "surface-container-low": "#f6f3f2",
+                        "surface-container-lowest": "#ffffff",
+                        "error": "#ba1a1a",
+                        "on-error-container": "#93000a",
+                        "background": "#fcf9f8",
+                        "outline-variant": "#bec9c3",
+                        "primary-fixed-dim": "#84d6b9",
+                        "tertiary-fixed": "#e2e2e2",
+                        "outline": "#6f7a74",
+                        "secondary-fixed-dim": "#c8c6c0",
+                        "on-surface-variant": "#3f4944",
+                        "on-secondary-fixed-variant": "#474742",
+                        "tertiary-container": "#606161",
+                        "primary-container": "#0f6e56",
+                        "error-container": "#ffdad6",
+                        "surface-container": "#f0eded",
+                        "on-background": "#1b1b1c",
+                        "on-secondary": "#ffffff",
+                        "on-surface": "#1b1b1c"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "stack-sm": "8px",
+                        "section-gap": "120px",
+                        "margin-desktop": "64px",
+                        "stack-lg": "32px",
+                        "container-max": "1200px",
+                        "margin-mobile": "20px",
+                        "stack-md": "16px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["DM Sans"],
+                        "label-sm": ["DM Sans"],
+                        "headline-xl": ["Outfit"],
+                        "headline-xl-mobile": ["Outfit"],
+                        "headline-md": ["Outfit"],
+                        "body-lg": ["DM Sans"],
+                        "headline-lg": ["Outfit"],
+                        "headline-lg-mobile": ["Outfit"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "label-sm": ["14px", {"lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "500"}],
+                        "headline-xl": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "headline-xl-mobile": ["36px", {"lineHeight": "44px", "fontWeight": "700"}],
+                        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                        "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "600"}]
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background text-on-surface font-body-md selection:bg-primary-fixed-dim selection:text-on-primary-fixed">
+<!-- TopAppBar -->
+<header class="bg-surface dark:bg-surface-dim border-b border-outline-variant dark:border-outline shadow-sm docked full-width top-0 sticky z-50 transition-all">
+<div class="flex justify-between items-center w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-4">
+<a class="font-headline-md text-headline-md font-bold text-on-surface dark:text-on-surface" href="#">Harish.Dev</a>
+<nav class="hidden md:flex items-center gap-gutter">
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-all duration-200 font-body-md text-body-md" href="#work">Work</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-all duration-200 font-body-md text-body-md" href="#about">About</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-all duration-200 font-body-md text-body-md" href="#services">Services</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-all duration-200 font-body-md text-body-md" href="#faq">FAQ</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-all duration-200 font-body-md text-body-md" href="#contact">Contact</a>
+</nav>
+<a class="hidden md:inline-flex items-center justify-center bg-primary-container text-on-primary-container px-6 py-2 rounded-full font-label-sm text-label-sm active:scale-95 transition-transform" href="#contact">
+                Get a Quote →
+            </a>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="pt-20 pb-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-section-gap items-center">
+<div class="space-y-stack-lg">
+<div class="inline-flex items-center bg-secondary-container text-on-secondary-container px-4 py-1.5 rounded-full border border-outline-variant">
+<span class="font-label-sm text-label-sm">Web Developer · Tamil Nadu · Open to new clients</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl-mobile md:text-headline-xl text-on-surface tracking-tight">
+                    I build websites that help Tamil Nadu businesses grow online
+                </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+                    Portfolio sites, business websites, and landing pages — delivered in 7 to 14 days. I speak Tamil and English, making the technical part easy for you.
+                </p>
+<div class="flex flex-col sm:flex-row gap-4 pt-4">
+<a class="bg-primary-container text-on-primary-container px-8 py-4 rounded-xl font-headline-md text-center hover:shadow-lg transition-all active:scale-98" href="#work">
+                        See My Work
+                    </a>
+<a class="border-2 border-outline text-on-surface px-8 py-4 rounded-xl font-headline-md text-center hover:bg-surface-container transition-all flex items-center justify-center gap-2" href="https://wa.me/919566831192">
+                        WhatsApp Me
+                    </a>
+</div>
+<div class="flex flex-wrap gap-x-8 gap-y-4 pt-stack-lg border-t border-outline-variant">
+<div class="flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined font-bold">check_circle</span>
+<span class="text-on-surface font-label-sm">4+ Projects Delivered</span>
+</div>
+<div class="flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined font-bold">check_circle</span>
+<span class="text-on-surface font-label-sm">7–14 Day Turnaround</span>
+</div>
+<div class="flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined font-bold">check_circle</span>
+<span class="text-on-surface font-label-sm">Tamil &amp; English Spoken</span>
+</div>
+</div>
+</div>
+<div class="relative">
+<div class="bg-primary-container/5 absolute inset-0 rounded-[2rem] -rotate-3 scale-105"></div>
+<img alt="Web Development Showcase" class="w-full h-auto rounded-2xl shadow-xl relative z-10 border border-outline-variant" data-alt="A clean and modern high-angle shot of a sleek silver laptop displaying a vibrant, professional business website UI. The setting is a minimalist, warm-toned workspace with soft natural light coming from the side. The overall aesthetic is high-end corporate mixed with warm, approachable technical mastery, using a palette of deep teals and soft whites to reflect the developer's brand identity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCpAEbk75tp0q23vrDh_ivj4FN7jx85poLb4GGvqV_bmohe-Mu5osL_nRsPifEecy93_CE5YjEQ5TX65_3rkJ-qtzEbubh825UZnPYNORv0upjDc5nrLBsBVida8vXb_ac-_n5Xt6eQF9upO1DoTMKz3SqKq1DNEwWXqRms7bbryRXZolfhZy-yV5CbYuF91n_NUXTNL_dE25n8yyHHQtp5xAxoKHMu25JFpckb2XE6sMY-_1rJhlDHgurIY-Y4buv9y2mC6VFUwV4"/>
+</div>
+</div>
+</section>
+<!-- Trust Bar -->
+<div class="bg-surface-container-low py-12 border-y border-outline-variant">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center">
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest mb-8">Trusted by businesses across Tamil Nadu</p>
+<div class="flex flex-wrap justify-center items-center gap-12 md:gap-24 opacity-60 grayscale hover:grayscale-0 transition-all">
+<span class="font-headline-md text-on-surface tracking-tighter">Vijay's Legal</span>
+<span class="font-headline-md text-on-surface tracking-tighter">Om Sri Srinivasa Cycle Mart</span>
+<span class="font-headline-md text-on-surface tracking-tighter">Vellore Businesses</span>
+<span class="font-headline-md text-on-surface tracking-tighter">Tamil Nadu Clients</span>
+</div>
+</div>
+</div>
+<!-- Portfolio Section -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto" id="work">
+<div class="text-center mb-16">
+<span class="text-primary font-bold tracking-widest text-label-sm">MY WORK</span>
+<h2 class="font-headline-xl text-headline-xl-mobile md:text-headline-xl mt-4">Selected Work</h2>
+<p class="font-body-lg text-on-surface-variant mt-4">Real websites built for real Tamil Nadu businesses</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<!-- Project Card 1 -->
+<div class="group bg-surface-container-lowest rounded-xl border border-outline-variant overflow-hidden hover:shadow-lg hover:-translate-y-2 transition-all">
+<div class="h-64 bg-surface-container-low border-b border-outline-variant flex items-center justify-center">
+<div class="w-24 h-24 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-5xl">gavel</span>
+</div>
+</div>
+<div class="p-8">
+<span class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full text-xs font-bold">LEGAL SERVICES</span>
+<h3 class="font-headline-md text-on-surface mt-4">Vijay's Legal</h3>
+<p class="text-on-surface-variant mt-2 font-body-md">Client website for a legal services business, built to present services clearly and help visitors reach out with confidence.</p>
+<div class="flex gap-4 mt-6">
+<a class="text-primary font-bold hover:underline" href="https://vijayslegal.in/" rel="noopener" target="_blank">View Live</a>
+<a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#contact">Start Similar Project</a>
+</div>
+</div>
+</div>
+<!-- Project Card 2 -->
+<div class="group bg-surface-container-lowest rounded-xl border border-outline-variant overflow-hidden hover:shadow-lg hover:-translate-y-2 transition-all">
+<div class="h-64 bg-secondary-container border-b border-outline-variant flex items-center justify-center">
+<div class="w-24 h-24 rounded-full bg-surface-container-lowest text-primary flex items-center justify-center group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-5xl">directions_bike</span>
+</div>
+</div>
+<div class="p-8">
+<span class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full text-xs font-bold">ONGOING PROJECT</span>
+<h3 class="font-headline-md text-on-surface mt-4">Om Sri Srinivasa Cycle Mart</h3>
+<p class="text-on-surface-variant mt-2 font-body-md">Business website in progress for a cycle mart in Velapadi, Vellore, focused on local visibility and customer inquiries.</p>
+<div class="flex gap-4 mt-6">
+<span class="text-primary font-bold">In Progress</span>
+<a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#contact">Discuss a Project</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Process Section -->
+<section class="py-section-gap bg-surface-container-low">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="text-center mb-20">
+<span class="text-primary font-bold tracking-widest text-label-sm uppercase">THE PROCESS</span>
+<h2 class="font-headline-xl text-headline-xl-mobile md:text-headline-xl mt-4">Simple, fast, and stress-free</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter relative">
+<!-- Step 1 -->
+<div class="flex flex-col items-center text-center z-10">
+<div class="w-16 h-16 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-3xl">call</span>
+</div>
+<h3 class="font-headline-md mb-2">Discovery Call</h3>
+<p class="text-on-surface-variant font-body-md">We discuss your business needs in Tamil or English.</p>
+</div>
+<!-- Step 2 -->
+<div class="flex flex-col items-center text-center z-10">
+<div class="w-16 h-16 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-3xl">receipt_long</span>
+</div>
+<h3 class="font-headline-md mb-2">Clear Quote</h3>
+<p class="text-on-surface-variant font-body-md">No hidden costs. You get a fixed price and timeline.</p>
+</div>
+<!-- Step 3 -->
+<div class="flex flex-col items-center text-center z-10">
+<div class="w-16 h-16 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-3xl">architecture</span>
+</div>
+<h3 class="font-headline-md mb-2">Design &amp; Build</h3>
+<p class="text-on-surface-variant font-body-md">I build your site using high-quality code and design.</p>
+</div>
+<!-- Step 4 -->
+<div class="flex flex-col items-center text-center z-10">
+<div class="w-16 h-16 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-3xl">rocket_launch</span>
+</div>
+<h3 class="font-headline-md mb-2">Launch</h3>
+<p class="text-on-surface-variant font-body-md">Your site goes live and starts helping your business.</p>
+</div>
+<!-- Connector Line (Desktop Only) -->
+<div class="hidden md:block absolute top-8 left-0 right-0 h-0.5 border-t-2 border-dashed border-outline-variant -z-0 mx-16"></div>
+</div>
+</div>
+</section>
+<!-- Trust Highlights -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<div class="p-8 bg-surface-container-lowest rounded-xl border-l-4 border-primary shadow-sm">
+<div class="text-primary mb-4">
+<span class="material-symbols-outlined text-4xl">verified</span>
+</div>
+<h3 class="font-headline-md mb-3">Real Client Work</h3>
+<p class="font-body-lg text-on-surface-variant">My portfolio shows actual business projects, including Vijay's Legal and current local work in Vellore.</p>
+</div>
+<!-- Highlight 2 -->
+<div class="p-8 bg-surface-container-lowest rounded-xl border-l-4 border-primary shadow-sm">
+<div class="text-primary mb-4">
+<span class="material-symbols-outlined text-4xl">location_on</span>
+</div>
+<h3 class="font-headline-md mb-3">Local Business Focus</h3>
+<p class="font-body-lg text-on-surface-variant">I build websites for Tamil Nadu businesses that need clear service pages, contact flows, and local search visibility.</p>
+</div>
+<!-- Highlight 3 -->
+<div class="p-8 bg-surface-container-lowest rounded-xl border-l-4 border-primary shadow-sm">
+<div class="text-primary mb-4">
+<span class="material-symbols-outlined text-4xl">support_agent</span>
+</div>
+<h3 class="font-headline-md mb-3">Tamil &amp; English Support</h3>
+<p class="font-body-lg text-on-surface-variant">Clients can explain their business comfortably, and I turn that into a professional website without technical confusion.</p>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto border-t border-outline-variant" id="about">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-section-gap items-center">
+<div class="order-2 lg:order-1 relative">
+<img alt="Harish Profile" class="w-full h-[500px] object-cover rounded-2xl shadow-xl" data-alt="A professional, friendly headshot of a young South Indian male developer in a smart-casual outfit. The setting is a bright, modern indoor office with warm wooden accents and soft lighting. The portrait captures a look of technical confidence and approachability, perfectly aligned with a brand that values professional rigor and local connection." src="WhatsApp Image 2026-05-06 at 6.46.15 PM.jpeg"/>
+<div class="absolute -bottom-10 -right-10 hidden md:flex flex-col gap-4">
+<div class="bg-primary-container text-on-primary-container p-6 rounded-2xl shadow-lg border border-primary">
+<p class="text-3xl font-bold">4+</p>
+<p class="text-sm">Websites Built</p>
+</div>
+<div class="bg-surface text-on-surface p-6 rounded-2xl shadow-lg border border-outline-variant">
+<p class="text-3xl font-bold">2+</p>
+<p class="text-sm">Industries Served</p>
+</div>
+</div>
+</div>
+<div class="order-1 lg:order-2 space-y-stack-lg">
+<span class="text-primary font-bold tracking-widest text-label-sm uppercase">ABOUT ME</span>
+<h2 class="font-headline-xl text-headline-xl-mobile md:text-headline-xl">A Developer who speaks your business language</h2>
+<div class="space-y-4 font-body-lg text-on-surface-variant">
+<p>Based in Tamil Nadu, I help local business owners transition from offline to a professional online presence. Most developers overcomplicate the process with technical jargon; I focus on clear communication and results.</p>
+<p>Whether you need a professional website for a legal practice, local store, or service business, I deliver high-quality code and modern designs that build trust with your customers.</p>
+<p class="font-bold text-on-surface">Languages Spoken: Tamil (Native), English (Fluent)</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Services & Pricing -->
+<section class="py-section-gap bg-surface-container-low px-margin-mobile md:px-margin-desktop" id="services">
+<div class="max-w-container-max mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-headline-xl text-headline-xl-mobile md:text-headline-xl">Services &amp; Pricing</h2>
+<p class="font-body-lg text-on-surface-variant mt-4">Transparent pricing to help you plan your growth</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Basic -->
+<div class="bg-surface rounded-2xl p-8 border border-outline-variant flex flex-col hover:border-primary transition-all">
+<div class="mb-8">
+<span class="material-symbols-outlined text-primary text-4xl">person</span>
+<h3 class="font-headline-md mt-4">Portfolio Website</h3>
+<p class="text-on-surface-variant mt-2">Perfect for photographers and individuals.</p>
+</div>
+<div class="mb-8">
+<span class="text-4xl font-bold text-on-surface">₹8,000</span>
+<span class="text-on-surface-variant">Starting from</span>
+</div>
+<ul class="space-y-4 mb-10 flex-grow text-on-surface-variant">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-lg">check</span> Up to 5 Pages</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-lg">check</span> Fast Loading Images</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-lg">check</span> Mobile Responsive</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-lg">check</span> 7-Day Delivery</li>
+</ul>
+<a class="w-full text-center py-3 border border-primary text-primary rounded-xl font-bold hover:bg-primary-container hover:text-on-primary-container transition-all" href="#contact">Choose Plan</a>
+</div>
+<!-- Recommended -->
+<div class="bg-primary-container text-on-primary-container rounded-2xl p-8 border-2 border-primary-fixed shadow-xl flex flex-col scale-105 relative z-10">
+<div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary-fixed text-on-primary-fixed px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest">Recommended</div>
+<div class="mb-8">
+<span class="material-symbols-outlined text-4xl">store</span>
+<h3 class="font-headline-md mt-4">Business Website</h3>
+<p class="text-on-primary-container/80 mt-2">The complete solution for local businesses.</p>
+</div>
+<div class="mb-8">
+<span class="text-4xl font-bold">₹12,000</span>
+<span class="text-on-primary-container/80">Starting from</span>
+</div>
+<ul class="space-y-4 mb-10 flex-grow">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-lg">check</span> Up to 10 Pages</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-lg">check</span> WhatsApp Integration</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-lg">check</span> Contact Form &amp; Maps</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-lg">check</span> 14-Day Delivery</li>
+</ul>
+<a class="w-full text-center py-3 bg-surface text-primary rounded-xl font-bold hover:bg-primary-fixed transition-all" href="#contact">Get Started</a>
+</div>
+<!-- Landing -->
+<div class="bg-surface rounded-2xl p-8 border border-outline-variant flex flex-col hover:border-primary transition-all">
+<div class="mb-8">
+<span class="material-symbols-outlined text-primary text-4xl">web</span>
+<h3 class="font-headline-md mt-4">Landing Page</h3>
+<p class="text-on-surface-variant mt-2">Single page for high conversion ads.</p>
+</div>
+<div class="mb-8">
+<span class="text-4xl font-bold text-on-surface">₹5,000</span>
+<span class="text-on-surface-variant">Starting from</span>
+</div>
+<ul class="space-y-4 mb-10 flex-grow text-on-surface-variant">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-lg">check</span> High Conversion UI</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-lg">check</span> Analytics Setup</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-lg">check</span> One Page Layout</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-lg">check</span> 3-Day Delivery</li>
+</ul>
+<a class="w-full text-center py-3 border border-primary text-primary rounded-xl font-bold hover:bg-primary-container hover:text-on-primary-container transition-all" href="#contact">Choose Plan</a>
+</div>
+</div>
+</div>
+</section>
+<!-- FAQ -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop max-w-[800px] mx-auto" id="faq">
+<div class="text-center mb-12">
+<h2 class="font-headline-xl text-headline-xl-mobile md:text-headline-xl">Frequently Asked Questions</h2>
+</div>
+<div class="space-y-4">
+<details class="group border border-outline-variant rounded-xl overflow-hidden" open="">
+<summary class="flex justify-between items-center p-6 cursor-pointer bg-surface hover:bg-surface-container transition-all list-none">
+<span class="font-headline-md">How long will it take to build?</span>
+<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="p-6 pt-0 font-body-md text-on-surface-variant">Typically, a landing page takes 3–5 days, and a full business website takes 7–14 days depending on complexity and content readiness.</div>
+</details>
+<details class="group border border-outline-variant rounded-xl overflow-hidden">
+<summary class="flex justify-between items-center p-6 cursor-pointer bg-surface hover:bg-surface-container transition-all list-none">
+<span class="font-headline-md">What technology do you use?</span>
+<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="p-6 pt-0 font-body-md text-on-surface-variant">I use modern web technologies like React, Tailwind CSS, and headless CMS systems to ensure your site is fast, secure, and easy for me to update.</div>
+</details>
+<details class="group border border-outline-variant rounded-xl overflow-hidden">
+<summary class="flex justify-between items-center p-6 cursor-pointer bg-surface hover:bg-surface-container transition-all list-none">
+<span class="font-headline-md">Do you speak Tamil?</span>
+<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="p-6 pt-0 font-body-md text-on-surface-variant">Yes! Tamil is my native language. I can communicate with you entirely in Tamil to make the process easier for your business.</div>
+</details>
+<details class="group border border-outline-variant rounded-xl overflow-hidden">
+<summary class="flex justify-between items-center p-6 cursor-pointer bg-surface hover:bg-surface-container transition-all list-none">
+<span class="font-headline-md">Are there any recurring costs?</span>
+<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="p-6 pt-0 font-body-md text-on-surface-variant">The domain name and web hosting usually have annual fees (approx ₹3,000–₹5,000). My development fee is a one-time payment.</div>
+</details>
+<details class="group border border-outline-variant rounded-xl overflow-hidden">
+<summary class="flex justify-between items-center p-6 cursor-pointer bg-surface hover:bg-surface-container transition-all list-none">
+<span class="font-headline-md">Will my site work on mobile?</span>
+<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="p-6 pt-0 font-body-md text-on-surface-variant">Absolutely. 100% of the websites I build are "mobile-first," meaning they are optimized to look perfect on smartphones.</div>
+</details>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="bg-primary-container text-on-primary-container py-section-gap" id="contact">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-section-gap">
+<div>
+<h2 class="font-headline-xl text-headline-xl-mobile md:text-headline-xl mb-8">Let's grow your business online</h2>
+<p class="font-body-lg mb-12 opacity-90">Ready to start? Send me a message or use the form to get a custom quote within 24 hours.</p>
+<div class="space-y-6">
+<a class="flex items-center gap-4 bg-on-primary-container text-primary-container p-6 rounded-2xl hover:scale-105 transition-transform" href="https://wa.me/919566831192">
+<span class="material-symbols-outlined text-3xl">chat</span>
+<div>
+<p class="font-bold">WhatsApp Me</p>
+<p class="text-sm opacity-80">+91 95668 31192</p>
+</div>
+</a>
+<a class="flex items-center gap-4 border border-on-primary-container/30 p-6 rounded-2xl hover:bg-on-primary-container/10 transition-colors" href="mailto:hello@harish.dev">
+<span class="material-symbols-outlined text-3xl">mail</span>
+<div>
+<p class="font-bold">Email Me</p>
+<p class="text-sm opacity-80">harishsivakumarjs@gmail.com</p>
+</div>
+</a>
+</div>
+</div>
+<div class="bg-surface p-8 md:p-12 rounded-[2rem] text-on-surface shadow-2xl">
+<form class="space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<div>
+<label class="font-label-sm block mb-2">Name</label>
+<input class="w-full bg-surface-container-low border-none focus:ring-2 focus:ring-primary rounded-xl p-4" placeholder="Your name" type="text"/>
+</div>
+<div>
+<label class="font-label-sm block mb-2">Business Type</label>
+<input class="w-full bg-surface-container-low border-none focus:ring-2 focus:ring-primary rounded-xl p-4" placeholder="e.g. Retail, Service" type="text"/>
+</div>
+</div>
+<div>
+<label class="font-label-sm block mb-2">Estimated Budget</label>
+<select class="w-full bg-surface-container-low border-none focus:ring-2 focus:ring-primary rounded-xl p-4">
+<option>₹5,000 - ₹10,000</option>
+<option>₹10,000 - ₹20,000</option>
+<option>₹20,000+</option>
+</select>
+</div>
+<div>
+<label class="font-label-sm block mb-2">Project Details</label>
+<textarea class="w-full bg-surface-container-low border-none focus:ring-2 focus:ring-primary rounded-xl p-4" placeholder="Tell me about your business..." rows="4"></textarea>
+</div>
+<button class="w-full bg-primary-container text-on-primary-container py-4 rounded-xl font-bold hover:shadow-lg transition-all active:scale-98" type="submit">Send Inquiry</button>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-inverse-surface dark:bg-on-surface text-on-tertiary-container w-full border-t border-on-tertiary-fixed-variant">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-section-gap grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<div class="space-y-4">
+<span class="font-headline-md text-headline-md font-bold text-surface">Harish.Dev</span>
+<p class="font-body-md opacity-80">Building high-performance digital experiences for the next generation of Tamil Nadu entrepreneurs.</p>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="text-primary-fixed font-bold text-headline-md">Navigation</h4>
+<div class="flex flex-col gap-2">
+<a class="hover:text-primary-fixed transition-colors" href="#work">Work</a>
+<a class="hover:text-primary-fixed transition-colors" href="#about">About</a>
+<a class="hover:text-primary-fixed transition-colors" href="#services">Services</a>
+<a class="hover:text-primary-fixed transition-colors" href="#faq">FAQ</a>
+</div>
+</div>
+<div class="space-y-4">
+<h4 class="text-primary-fixed font-bold text-headline-md">Contact</h4>
+<p class="font-body-md">+91 95668 31192</p>
+<p class="font-body-md">harishsivakumarjs@gmail.com</p>
+<div class="flex gap-4 pt-4">
+<a class="w-10 h-10 rounded-full border border-on-tertiary-fixed-variant flex items-center justify-center hover:bg-primary-fixed hover:text-on-primary-fixed transition-all" href="#"><span class="material-symbols-outlined">link</span></a>
+<a class="w-10 h-10 rounded-full border border-on-tertiary-fixed-variant flex items-center justify-center hover:bg-primary-fixed hover:text-on-primary-fixed transition-all" href="#"><span class="material-symbols-outlined">groups</span></a>
+</div>
+</div>
+</div>
+<div class="border-t border-on-tertiary-fixed-variant/20 py-8 text-center px-margin-mobile">
+<p class="font-body-md opacity-60">© 2024 Harish.Dev. Built with precision and care.</p>
+</div>
+</footer>
+</body></html>
